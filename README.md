@@ -1,19 +1,8 @@
-Sure, here's the complete README content that you can copy directly into a Markdown file:
 
 ```markdown
 # NSUT Roll Number Search
 
 This project is a web application that allows users to search for the roll numbers of students at NSUT by entering their names. The application is developed by Sujal Chaudhary.
-
-## Table of Contents
-
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Configuration](#configuration)
-- [API](#api)
-- [Demo](#demo)
-- [Author](#author)
 
 ## Features
 
