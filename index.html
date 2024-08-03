@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--developer:Sujal Chaudhary(CSAI)-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Rollno(NSUT)</title>
+  <meta name="description" content="Search RollNo for students at NSUT by entering their name. Developed by Sujal Chaudhary.">
+  <meta name="keywords" content="NSUT, RollNo Search, Student Information, Sujal Chaudhary, CSAI">
+  <meta name="author" content="Sujal Chaudhary">
+  <meta property="og:title" content="Search Rollno(NSUT)">
+  <meta property="og:description" content="Search RollNo for students at NSUT by entering their name. Developed by Sujal Chaudhary.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rollno.sujal.info/">
+  <meta property="og:image" content="https://sdrive.blr1.cdn.digitaloceanspaces.com/files/b93178860edd1e46b0db2a0a2ba028d8.png">
+  <meta name="twitter:card" content="https://sdrive.blr1.cdn.digitaloceanspaces.com/files/b93178860edd1e46b0db2a0a2ba028d8.png">
+  <meta name="twitter:title" content="Search Rollno(NSUT)">
+  <meta name="twitter:description" content="Search RollNo for students at NSUT by entering their name. Developed by Sujal Chaudhary.">
+  <meta name="twitter:image" content="https://sdrive.blr1.cdn.digitaloceanspaces.com/files/b93178860edd1e46b0db2a0a2ba028d8.png">
+  <meta name="twitter:creator" content="https://sdrive.blr1.cdn.digitaloceanspaces.com/files/b93178860edd1e46b0db2a0a2ba028d8.png">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .animate-fadeIn {
+      animation: fadeIn 1s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <div class="w-full max-w-md p-8">
+    <h1 class="text-3xl font-bold mb-8 text-center">Search RollNo(NSUT)</h1>
+    <form id="studentForm" class="bg-white p-6 rounded-lg shadow-lg mb-8">
+      <div class="mb-4">
+        <label for="studentName" class="block text-gray-700 text-sm font-bold mb-2">Enter Name</label>
+        <input type="text" id="studentName" name="studentName" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+      </div>
+      <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300">Search</button>
+    </form>
+    <h2 id="responseMessage" class="text-center text-black text-xl hidden animate-fadeIn">Scroll The Table</h2>
+    <div class="overflow-x-auto">
+      <table id="responseTable" class="min-w-full bg-white shadow-lg rounded-lg hidden animate-fadeIn mx-auto">
+        <thead>
+          <tr> 
+              <th class="py-2 px-4 bg-gray-200 text-left text-gray-600">Degree</th>
+              <th class="py-2 px-4 bg-gray-200 text-left text-gray-600">Branch</th>
+              <th class="py-2 px-4 bg-gray-200 text-left text-gray-600">RollNo</th>
+              <th class="py-2 px-4 bg-gray-200 text-left text-gray-600">Name</th>
+              <th class="py-2 px-4 bg-gray-200 text-left text-gray-600">FatherName</th>
+              <th class="py-2 px-4 bg-gray-200 text-left text-gray-600">Section</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    <h3 class="text-center text-gray-500 text-xl mt-4">Developed by <a class="text-blue-700 font-bold" href="mailto:me@sujal.info">Sujal Chaudhary(CSAI)</a></h3>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
