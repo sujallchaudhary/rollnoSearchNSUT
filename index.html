@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--developer: Sujal Chaudhary (CSAI)-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Rollno(NSUT)</title>
+  <meta name="description" content="Search RollNo for students at NSUT by entering their name. Developed by Sujal Chaudhary.">
+  <meta name="keywords" content="NSUT, RollNo Search, Student Information, Sujal Chaudhary, CSAI">
+  <meta name="author" content="Sujal Chaudhary">
+  <meta property="og:title" content="Search Rollno(NSUT)">
+  <meta property="og:description" content="Search RollNo for students at NSUT by entering their name. Developed by Sujal Chaudhary.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rollno.sujal.info/">
+  <meta property="og:image" content="https://sdrive.blr1.cdn.digitaloceanspaces.com/files/b93178860edd1e46b0db2a0a2ba028d8.png">
+  <meta name="twitter:card" content="https://sdrive.blr1.cdn.digitaloceanspaces.com/files/b93178860edd1e46b0db2a0a2ba028d8.png">
+  <meta name="twitter:title" content="Search Rollno(NSUT)">
+  <meta name="twitter:description" content="Search RollNo for students at NSUT by entering their name. Developed by Sujal Chaudhary.">
+  <meta name="twitter:image" content="https://sdrive.blr1.cdn.digitaloceanspaces.com/files/b93178860edd1e46b0db2a0a2ba028d8.png">
+  <meta name="twitter:creator" content="Sujal Chaudhary">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen">
+
+  <div class="w-full max-w-lg p-8 bg-gray-800 rounded-lg shadow-lg">
+    <h1 class="text-3xl font-extrabold mb-6 text-center text-white">Search RollNo(NSUT)</h1>
+    <p class="text-center text-gray-400 text-lg mb-4 font-semibold">Emails Data Updated.</p>
+    <form id="studentForm" class="p-6 rounded-lg mb-8 bg-gray-700 shadow-inner">
+      <div class="mb-6">
+        <label for="studentName" class="block text-gray-200 text-sm font-semibold mb-2">Enter Name</label>
+        <input type="text" id="studentName" name="studentName" class="w-full py-2 px-4 rounded-lg bg-gray-900 text-white border border-gray-600 focus:border-blue-500 focus:ring focus:ring-blue-200 transition duration-300" required>
+      </div>
+      <div class="mb-6">
+        <label for="year" class="block text-gray-200 text-sm font-semibold mb-2">Select Year</label>
+        <select id="year" name="year" class="w-full py-2 px-4 rounded-lg bg-gray-900 text-white border border-gray-600 focus:border-blue-500 focus:ring focus:ring-blue-200 transition duration-300">
+          <option value="2023">2023</option>
+          <option selected value="2024">2024</option>
+        </select>
+      </div>
+      <button type="submit" class="w-full bg-blue-600 hover:bg-blue-800 text-white font-bold py-3 rounded-lg shadow-lg transition duration-300">Search</button>
+    </form>
+    <h2 id="responseMessage" class="text-center text-lg hidden animate-fadeIn text-gray-400">Scroll the Table (Horizontally)</h2>
+    <div class="responsive-table w-full mt-6">
+      <table id="responseTable" class="min-w-full bg-gray-800 rounded-lg hidden animate-fadeIn">
+        <thead>
+          <tr> 
+            <th class="py-3 px-6">RollNo</th>
+            <th class="py-3 px-6">Email</th> 
+            <th class="py-3 px-6">Name</th>
+            <th class="py-3 px-6">Father Name</th>
+            <th class="py-3 px-6">Degree</th>
+            <th class="py-3 px-6 w-32 break-multiline">Branch</th>
+            <th class="py-3 px-6">Section</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    <h3 class="text-center text-gray-500 text-xl mt-6">Developed by <a class="text-blue-400 font-bold" href="https://sujal.info/">Sujal Chaudhary(CSAI)</a></h3>
+    <h3 class="text-center text-gray-500 text-xl mt-4"><a class="text-blue-400 font-bold" href="https://sujal.info/rollnoSearchSourceCode">Source Code</a></h3>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
